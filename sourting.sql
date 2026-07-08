@@ -1,0 +1,14 @@
+CREATE TABLE IF NOT EXISTS CRICKETWORLDCUP(
+    ID int,
+NAME VARCHAR (2014),
+shirtnumber int, 
+TEAM text,
+score text
+); 
+INSERT INTO CRICKETWORLDCUP ( ID, NAME, shirtnumber, TEAM, score)
+VALUES
+('21', 'Babar Azam', '56', 'Pakistan', '200-3')
+('16', 'Virat Kholi', '18', 'India', '180-4')
+('20', 'Mitchel Starc ', '10', 'Austrailia', '150-9')
+SELECT COUNT(SCORE) AS total_SC FROM CRICKETWORLDCUP;
+SELECT TEAM, score FROM CRICKETWORLDCUP ORDER BY score ASC LIMIT 5;
